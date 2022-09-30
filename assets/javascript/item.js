@@ -1,196 +1,257 @@
- var listProduct = [
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/3_den_7a3564acaafb433fbeef69eea3661271_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/2_den_8b02fbd39211457ebaf59f7863f3709f_master.jpg',
-        name: 'Áo Thun Nữ Relax In Tram Logo FF WTS 2183',
-        type: 'female',
-        price: '299,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_den_236fbb3148d644beb7f78f2bd9c3da55_grande.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/3_nau-cam_c5bc308ce2984226a0f25636cdd39701_master.jpg',
-        name: 'Áo Thun Nam IN XE FF MTS 1179',
-        type: 'male',
-        price: '329,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_den_b7a87cc801234dd28281214ed33d463b_grande.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/5_trang_ff9a19889c6f4b41979eec4cfefeabf1_master.jpg',
-        name: 'Áo Thun Nữ Relax In Tram Xe FF WTS 2184',
-        type: 'female',
-        price: '279,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_den_2909e12618244dff85063096325c68e5_grande.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/3_den_d914b8cd569d4b0991bcfb8f1f86eb8e_master.jpg',
-        name: 'Áo Thun Nam Relax In Tram Xe FF MTS 1184',
-        type: 'male',
-        price: '299,000 VND',
-    },{
-        img_1: 'https://product.hstatic.net/1000184601/product/1_den_1ab7eb3908b4446b83465b8e925b9b0d_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/___den_98d9fdb7fa5943628a3a7e284dd3a1fe_master.jpg',
-        name: 'Áo Thun Trẻ Em FF In Nứt KTS 3180',
-        type: 'baby',
-        price: '229,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_trang_1d7ab36deb224ed59ecded9821a615c0_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_den_e79eefc2102f4f60bf5e7820ae555b7e_master.jpg',
-        name: 'Áo Thun Nữ FF In Nứt WTS 2180',
-        type: 'female',
-        price: '299,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/2_den_3e209dd1cdef4c2c9f455981ae874968_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/2_trang_d6bd34764c5041b9a94508a9dc8d1197_master.jpg',
-        name: 'Áo Thun Nam FF In Nứt MTS 1180',
-        type: 'sale',
-        price: '329,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/2_trang_fcf129acd47645028b6a4304f945889a_grande.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/2_trang_fcf129acd47645028b6a4304f945889a_master.jpg',
-        name: 'Áo Thun Nữ Regular In Tram WTS 2181',
-        type: 'female',
-        price: '279,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/3_trang_bb98e83a5f5e4779880e99d1b2e98461_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_trang_f9046eb550134fafb785b7eb8c3834de_master.jpg',
-        name: 'Áo Thun Nam FF Regular In Tram MTS 1181',
-        type: 'sale',
-        price: '299,000 VND',
-    },{
-        img_1: 'https://product.hstatic.net/1000184601/product/2_den_55acfd195b924f06b925d1af838cf63a_grande.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_nau-cam_814b8e44a38f442f8eb0e919885f8773_master.jpg',
-        name: 'Áo Thun Nam Regular In Logo FF MTS 1182',
-        type: 'sale',
-        price: '299,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/2_nau-cam_79b0bddce17d4df1ac0783115b95ead5_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/14_den_781ebd099a01422a819dde1115fb5324_master.jpg',
-        name: 'Áo Khoác Nữ Nón In Logo Fast&Fourious WOP 2026',
-        type: 'coat',
-        price: '799,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/2_den_3cbdf2f08653427da6e57217ae5d1568_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/3_nau-cam_1faee2a6cd4e43e5806c16ebb66986f6_master.jpg',
-        name: 'Áo Khoác Nam Dù Nón In Logo Fast&Fourious MOP 1026',
-        type: 'coat',
-        price: '829,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/3_den_4cb4d627309e46aaab190deebf35ffb5_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/2_den_d03bc73cb9fe40b38cf2857142d3b9aa_master.jpg',
-        name: 'Áo Thun Nam Relax In Tram Logo FF MTS 1183',
-        type: 'sale',
-        price: '329,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_den_ed5cb0210f4b4c4eaa45d524cae49f7c_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_reu_669f71c126c44b49b23ce94be3cfbd41_master.jpg',
-        name: 'Áo Khoác Nữ Bomber Dù Bo Sọc Thêu Logo FF WOP 2027',
-        type: 'coat',
-        price: '799,000 VND',
-    },{
-        img_1: 'https://product.hstatic.net/1000184601/product/4_reu_3a53dd3d6790432fa55c85f6deeaa5b3_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/3_den_c308667a0d734447b8fc36d551a4ea07_master.jpg',
-        name: 'Áo Khoác Nam Bomber Dù Bo Sọc Thêu Logo FF MOP 1027',
-        type: 'coat',
-        price: '829,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_be_72d01fa7deb441b1831ac4cde159b90d_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/4_xanh-reu_181afbc17d5e4ca5b08a453cd682f7e8_master.jpg',
-        name: 'Áo Khoác Nữ Kiểu Croptop WOF 2009',
-        type: 'sale',
-        price: '549,000 VND        ',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_xanh_fcb3154b653e408e87eacebd25d5793a_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/2_trang_bc998c923ae540ffa69f4cd63493c16b_master.jpg',
-        name: 'Polo Nam Rã Vai Phối Màu MPO 1019',
-        type: 'sale',
-        price: '479,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/bn_nau-cam_c35067318ae64f9da0516d8f8dd48688_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/n_den_0d416555593c47018fc8719bf7de64d8_master.jpg',
-        name: 'Áo Thun Nam Cổ Tròn Basic In Logo X MTS 1168',
-        type: 'sale',
-        price: '179,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/a_trang_ec7c48c31a44461fbf33aa8c46050526_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_nau-cam_097bf3e8a7584240917cd0ebe7e40825_master.jpg',
-        name: 'Áo Thun Nữ Cổ Tròn Basic In Logo X WTS 2175',
-        type: 'female',
-        price: '159,000 VND',
-    },{
-        img_1: 'https://product.hstatic.net/1000184601/product/1_den_ea2b057a95894899961a9d7f68591806_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_nau-cam_db9a49e2894242788aded828359a5523_master.jpg',
-        name: 'Áo Thun Nữ Regular In Logo FF WTS 2182',
-        type: 'female',
-        price: '279,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/4_den_1ae54400e4d24d97bf38afbfd264354b_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/3_trang_4f78b24b0bdb493ca5c24efb23d3fbcc_master.jpg',
-        name: 'Áo Thun Trẻ Em Regular In HORIZON KTS 3188',
-        type: 'baby',
-        price: '229,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_trang_21ce363de0e042f385370f8a817ff271_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_vang_4733070eceee41fe9d2404b08327bdf6_master.jpg',
-        name: 'Áo Thun Nam In Typo Slogan Graphic Chill MTS 1160',
-        type: 'sale',
-        price: '299,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/nam5_xanh-dam_5d73d3564f8d401ea476ee96b8a137dd_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/3_trang_352bf063359e41bdbd4f65dffd01c153_master.png',
-        name: 'Áo Khoác Nam MOK 1023',
-        type: 'male',
-        price: '629,000 VND        ',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_nau-nhat_3b8cdae9afd04e5f897dd54d333639c3_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_xanh-den_98ffd2d6a9c645b88baf7828c28fba86_master.jpg',
-        name: 'Quần Short Nam Linen MSR 1017',
-        type: 'male',
-        price: '429,000 VND',
-    },{
-        img_1: 'https://product.hstatic.net/1000184601/product/4_den_0b1b3d74ff274050bf5c6f8ffb8d23ab_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/2_nau-dam_6b48533838264e54893f321d72448e50_master.jpg',
-        name: 'Quần Short Nam Kakis Lưng Thun MSR 1016',
-        type: 'male',
-        price: '399,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_den_c22d6eede2bf4e82af1fe02a53f306a8_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_trang_ff070415273c43789ff1869c5493586f_master.jpg',
-        name: 'Áo Polo Nam In Thân Sau MPO 1015',
-        type: 'male',
-        price: '429,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/3_be_cca012d018b24900a155f807edb8cd80_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_be_0c88b2aceef144f29779cb385f7608a5_master.jpg',
-        name: 'Áo Thun Nam Cộc Tay Vải Cà Phê Airy MTS 1162',
-        type: 'male',
-        price: '259,000 VND',
-    },
-    {
-        img_1: 'https://product.hstatic.net/1000184601/product/1_trang_21ce363de0e042f385370f8a817ff271_master.jpg',
-        img_2: 'https://product.hstatic.net/1000184601/product/1_vang_4733070eceee41fe9d2404b08327bdf6_master.jpg',
-        name: 'Áo Thun Nam In Typo Slogan Graphic Chill MTS 1160',
-        type: 'male',
-        price: '299,000 VND',
-    },
- ]
+var listProduct = [
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/3_den_7a3564acaafb433fbeef69eea3661271_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/2_den_8b02fbd39211457ebaf59f7863f3709f_master.jpg",
+    name: "Áo Thun Nữ Relax In Tram Logo FF WTS 2183",
+    type: "female",
+    price: "299,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_den_236fbb3148d644beb7f78f2bd9c3da55_grande.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/3_nau-cam_c5bc308ce2984226a0f25636cdd39701_master.jpg",
+    name: "Áo Thun Nam IN XE FF MTS 1179",
+    type: "male",
+    price: "329,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_den_b7a87cc801234dd28281214ed33d463b_grande.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/5_trang_ff9a19889c6f4b41979eec4cfefeabf1_master.jpg",
+    name: "Áo Thun Nữ Relax In Tram Xe FF WTS 2184",
+    type: "female",
+    price: "279,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_den_2909e12618244dff85063096325c68e5_grande.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/3_den_d914b8cd569d4b0991bcfb8f1f86eb8e_master.jpg",
+    name: "Áo Thun Nam Relax In Tram Xe FF MTS 1184",
+    type: "male",
+    price: "299,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_den_1ab7eb3908b4446b83465b8e925b9b0d_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/___den_98d9fdb7fa5943628a3a7e284dd3a1fe_master.jpg",
+    name: "Áo Thun Trẻ Em FF In Nứt KTS 3180",
+    type: "baby",
+    price: "229,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_trang_1d7ab36deb224ed59ecded9821a615c0_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_den_e79eefc2102f4f60bf5e7820ae555b7e_master.jpg",
+    name: "Áo Thun Nữ FF In Nứt WTS 2180",
+    type: "female",
+    price: "299,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/2_den_3e209dd1cdef4c2c9f455981ae874968_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/2_trang_d6bd34764c5041b9a94508a9dc8d1197_master.jpg",
+    name: "Áo Thun Nam FF In Nứt MTS 1180",
+    type: "sale",
+    price: "329,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/2_trang_fcf129acd47645028b6a4304f945889a_grande.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/2_trang_fcf129acd47645028b6a4304f945889a_master.jpg",
+    name: "Áo Thun Nữ Regular In Tram WTS 2181",
+    type: "female",
+    price: "279,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/3_trang_bb98e83a5f5e4779880e99d1b2e98461_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_trang_f9046eb550134fafb785b7eb8c3834de_master.jpg",
+    name: "Áo Thun Nam FF Regular In Tram MTS 1181",
+    type: "sale",
+    price: "299,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/2_den_55acfd195b924f06b925d1af838cf63a_grande.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_nau-cam_814b8e44a38f442f8eb0e919885f8773_master.jpg",
+    name: "Áo Thun Nam Regular In Logo FF MTS 1182",
+    type: "sale",
+    price: "299,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/2_nau-cam_79b0bddce17d4df1ac0783115b95ead5_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/14_den_781ebd099a01422a819dde1115fb5324_master.jpg",
+    name: "Áo Khoác Nữ Nón In Logo Fast&Fourious WOP 2026",
+    type: "coat",
+    price: "799,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/2_den_3cbdf2f08653427da6e57217ae5d1568_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/3_nau-cam_1faee2a6cd4e43e5806c16ebb66986f6_master.jpg",
+    name: "Áo Khoác Nam Dù Nón In Logo Fast&Fourious MOP 1026",
+    type: "coat",
+    price: "829,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/3_den_4cb4d627309e46aaab190deebf35ffb5_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/2_den_d03bc73cb9fe40b38cf2857142d3b9aa_master.jpg",
+    name: "Áo Thun Nam Relax In Tram Logo FF MTS 1183",
+    type: "sale",
+    price: "329,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_den_ed5cb0210f4b4c4eaa45d524cae49f7c_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_reu_669f71c126c44b49b23ce94be3cfbd41_master.jpg",
+    name: "Áo Khoác Nữ Bomber Dù Bo Sọc Thêu Logo FF WOP 2027",
+    type: "coat",
+    price: "799,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/4_reu_3a53dd3d6790432fa55c85f6deeaa5b3_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/3_den_c308667a0d734447b8fc36d551a4ea07_master.jpg",
+    name: "Áo Khoác Nam Bomber Dù Bo Sọc Thêu Logo FF MOP 1027",
+    type: "coat",
+    price: "829,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_be_72d01fa7deb441b1831ac4cde159b90d_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/4_xanh-reu_181afbc17d5e4ca5b08a453cd682f7e8_master.jpg",
+    name: "Áo Khoác Nữ Kiểu Croptop WOF 2009",
+    type: "sale",
+    price: "549,000 VND        ",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_xanh_fcb3154b653e408e87eacebd25d5793a_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/2_trang_bc998c923ae540ffa69f4cd63493c16b_master.jpg",
+    name: "Polo Nam Rã Vai Phối Màu MPO 1019",
+    type: "sale",
+    price: "479,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/bn_nau-cam_c35067318ae64f9da0516d8f8dd48688_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/n_den_0d416555593c47018fc8719bf7de64d8_master.jpg",
+    name: "Áo Thun Nam Cổ Tròn Basic In Logo X MTS 1168",
+    type: "sale",
+    price: "179,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/a_trang_ec7c48c31a44461fbf33aa8c46050526_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_nau-cam_097bf3e8a7584240917cd0ebe7e40825_master.jpg",
+    name: "Áo Thun Nữ Cổ Tròn Basic In Logo X WTS 2175",
+    type: "female",
+    price: "159,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_den_ea2b057a95894899961a9d7f68591806_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_nau-cam_db9a49e2894242788aded828359a5523_master.jpg",
+    name: "Áo Thun Nữ Regular In Logo FF WTS 2182",
+    type: "female",
+    price: "279,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/4_den_1ae54400e4d24d97bf38afbfd264354b_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/3_trang_4f78b24b0bdb493ca5c24efb23d3fbcc_master.jpg",
+    name: "Áo Thun Trẻ Em Regular In HORIZON KTS 3188",
+    type: "baby",
+    price: "229,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_trang_21ce363de0e042f385370f8a817ff271_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_vang_4733070eceee41fe9d2404b08327bdf6_master.jpg",
+    name: "Áo Thun Nam In Typo Slogan Graphic Chill MTS 1160",
+    type: "sale",
+    price: "299,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/nam5_xanh-dam_5d73d3564f8d401ea476ee96b8a137dd_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/3_trang_352bf063359e41bdbd4f65dffd01c153_master.png",
+    name: "Áo Khoác Nam MOK 1023",
+    type: "male",
+    price: "629,000 VND        ",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_nau-nhat_3b8cdae9afd04e5f897dd54d333639c3_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_xanh-den_98ffd2d6a9c645b88baf7828c28fba86_master.jpg",
+    name: "Quần Short Nam Linen MSR 1017",
+    type: "male",
+    price: "429,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/4_den_0b1b3d74ff274050bf5c6f8ffb8d23ab_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/2_nau-dam_6b48533838264e54893f321d72448e50_master.jpg",
+    name: "Quần Short Nam Kakis Lưng Thun MSR 1016",
+    type: "male",
+    price: "399,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_den_c22d6eede2bf4e82af1fe02a53f306a8_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_trang_ff070415273c43789ff1869c5493586f_master.jpg",
+    name: "Áo Polo Nam In Thân Sau MPO 1015",
+    type: "male",
+    price: "429,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/3_be_cca012d018b24900a155f807edb8cd80_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_be_0c88b2aceef144f29779cb385f7608a5_master.jpg",
+    name: "Áo Thun Nam Cộc Tay Vải Cà Phê Airy MTS 1162",
+    type: "male",
+    price: "259,000 VND",
+  },
+  {
+    img_1:
+      "https://product.hstatic.net/1000184601/product/1_trang_21ce363de0e042f385370f8a817ff271_master.jpg",
+    img_2:
+      "https://product.hstatic.net/1000184601/product/1_vang_4733070eceee41fe9d2404b08327bdf6_master.jpg",
+    name: "Áo Thun Nam In Typo Slogan Graphic Chill MTS 1160",
+    type: "male",
+    price: "299,000 VND",
+  },
+];
 var htmlHome = `
 <div id="container" class="">
         <!-- Brand -->
@@ -657,133 +718,87 @@ var htmlHome = `
             </div>
         </div>
     </div>
-    `
+    `;
 
- var htmlProduct = `<div id="container" class=" gird wide">
+var htmlProduct = `<div id="container" class="gird wide">
  <div class="row">
-     <div class="container__category col l-2 hide-on-mobile-tablet">
-         <span option="all" class="container__category-item">TẤT CẢ</span>
-         <span option="female" class="container__category-item">NỮ</span>
-         <span option="male" class="container__category-item">NAM</span>
-         <span option="baby" class="container__category-item">BABY</span>
-         <span option="coat" class="container__category-item">ÁO KHOÁC</span>
-         <span option="sale" class="container__category-item">SIÊU SALE</span>
-     </div>
-     <div class="container__home-product col l-8 l-o-1">
-         <form action="" class="container__form grid wide hide-on-mobile">
-             <div class="container__select-warp row no-gutters">
-                 <div class="container__select-item col l-2-5 m-2-5 c-5">
-                     <h3 class="container__select-heading">Size</h3>
-                     <ul class="container__list-option" style="display: none;">
-                         <li class="container__item-option">
-                             <span class="container__item-text">S</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">M</span>   
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">L</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">X</span>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="container__select-item col l-2-5 m-2-5 c-5">
-                     <h3 class="container__select-heading">Giới Tính</h3>
-                     <ul class="container__list-option" style="display: none;">
-                         <li class="container__item-option">
-                             <span class="container__item-text">NAM</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">NỮ</span>   
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="container__select-item col l-2-5 m-2-5 c-5">
-                     <h3 class="container__select-heading">Giá</h3>
-                     <ul class="container__list-option" style="display: none;">
-                         <li class="container__item-option">
-                             <span class="container__item-text">Dưới 300k</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">300_500k</span>   
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">Trên 500k</span>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="container__select-item col l-2-5 m-2-5 c-5">
-                     <h3 class="container__select-heading">Màu Sắc</h3>
-                     <ul class="container__list-option" style="display: none;">
-                         <li class="container__item-option">
-                             <span class="container__item-text">TRẮNG</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">ĐEN</span>   
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">CAM</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">ĐỎ</span>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="container__select-item col l-2-5 m-2-5 c-5">
-                     <h3 class="container__select-heading">FORM DÁNG</h3>
-                     <ul class="container__list-option" style="display: none;">
-                         <li class="container__item-option">
-                             <span class="container__item-text">Slim</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">Regular</span>   
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">ReLax</span>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="container__select-item col l-2-5 m-2-5 c-5">
-                     <h3 class="container__select-heading">Dòng Sản Phẩm</h3>
-                     <ul class="container__list-option" style="display: none;">
-                         <li class="container__item-option">
-                             <span class="container__item-text">ÁO ĐÔI</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">ÁO KHOÁC</span>   
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="container__select-item col l-2-5 m-2-5 c-5">
-                     <h3 class="container__select-heading">Tiêu Chí Khác</h3>
-                     <ul class="container__list-option" style="display: none;">
-                         <li class="container__item-option">
-                             <span class="container__item-text">CHỐNG UV</span>
-                         </li>
-                         <li class="container__item-option">
-                             <span class="container__item-text">TRƯỢC NƯỚC</span>   
-                         </li>
-                     </ul>
-                 </div>
-                 <button class="container__filter-btn btn col l-2-5 m-2-5 c-5">LỌC
-                 </button>
-                 </div>
-         </form>
-         <div class="container__product grid wide">
-             <div class="row" id="home__product">
-
-             </div>
-             
+   <div class="container__category col l-2 hide-on-mobile-tablet">
+     <span option="all" class="container__category-item">TẤT CẢ</span>
+     <span option="female" class="container__category-item">NỮ</span>
+     <span option="male" class="container__category-item">NAM</span>
+     <span option="baby" class="container__category-item">BABY</span>
+     <span option="coat" class="container__category-item">ÁO KHOÁC</span>
+     <span option="sale" class="container__category-item"
+       >SIÊU SALE</span
+     >
+   </div>
+   <div class="container__home-product col l-8 l-o-1">
+     <form action="" class="container__form grid wide hide-on-mobile">
+       <div class="container__select-warp row no-gutters">
+         <div class="container__select-item col l-2-5 m-2-5 c-5">
+           <h3 class="container__select-heading">Size</h3>
+           <ul class="container__list-option" style="display: none">
+             <li class="container__item-option">S</li>
+             <li class="container__item-option">M</li>
+             <li class="container__item-option">L</li>
+             <li class="container__item-option">X</li>
+           </ul>
          </div>
+         <div class="container__select-item col l-2-5 m-2-5 c-5">
+           <h3 class="container__select-heading">Giới Tính</h3>
+           <ul class="container__list-option" style="display: none">
+             <li class="container__item-option">NAM</li>
+             <li class="container__item-option">NỮ</li>
+           </ul>
+         </div>
+         <div class="container__select-item col l-2-5 m-2-5 c-5">
+           <h3 class="container__select-heading">Giá</h3>
+           <ul class="container__list-option" style="display: none">
+             <li class="container__item-option">Dưới 300k</li>
+             <li class="container__item-option">300_500k</li>
+             <li class="container__item-option">Trên 500k</li>
+           </ul>
+         </div>
+         <div class="container__select-item col l-2-5 m-2-5 c-5">
+           <h3 class="container__select-heading">Màu Sắc</h3>
+           <ul class="container__list-option" style="display: none">
+             <li class="container__item-option">TRẮNG</li>
+             <li class="container__item-option">ĐEN</li>
+             <li class="container__item-option">CAM</li>
+             <li class="container__item-option">ĐỎ</li>
+           </ul>
+         </div>
+         <div class="container__select-item col l-2-5 m-2-5 c-5">
+           <h3 class="container__select-heading">FORM DÁNG</h3>
+           <ul class="container__list-option" style="display: none">
+             <li class="container__item-option">Slim</li>
+             <li class="container__item-option">Regular</li>
+             <li class="container__item-option">ReLax</li>
+           </ul>
+         </div>
+         <div class="container__select-item col l-2-5 m-2-5 c-5">
+           <h3 class="container__select-heading">Dòng Sản Phẩm</h3>
+           <ul class="container__list-option" style="display: none">
+             <li class="container__item-option">ÁO ĐÔI</li>
+             <li class="container__item-option">ÁO KHOÁC</li>
+           </ul>
+         </div>
+         <div class="container__select-item col l-2-5 m-2-5 c-5">
+           <h3 class="container__select-heading">Tiêu Chí Khác</h3>
+           <ul class="container__list-option" style="display: none">
+             <li class="container__item-option">CHỐNG UV</li>
+             <li class="container__item-option">TRƯỢC NƯỚC</li>
+           </ul>
+         </div>
+         <button class="container__filter-btn btn col l-2-5 m-2-5 c-5">
+           LỌC
+         </button>
+       </div>
+     </form>
+     <div class="container__product grid wide">
+       <div class="row" id="home__product"></div>
      </div>
+   </div>
  </div>
- 
-</div>`
-export {
-    listProduct,
-    htmlHome,
-    htmlProduct 
-    
-} 
+</div>`;
+export { listProduct, htmlHome, htmlProduct };
